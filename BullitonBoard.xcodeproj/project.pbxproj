@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		44E078EB2028C7CF00C80DCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E078EA2028C7CF00C80DCA /* AppDelegate.swift */; };
-		44E078ED2028C7CF00C80DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E078EC2028C7CF00C80DCA /* ViewController.swift */; };
 		44E078F02028C7CF00C80DCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E078EE2028C7CF00C80DCA /* Main.storyboard */; };
 		44E078F22028C7CF00C80DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E078F12028C7CF00C80DCA /* Assets.xcassets */; };
 		44E078F52028C7CF00C80DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E078F32028C7CF00C80DCA /* LaunchScreen.storyboard */; };
+		44E078FF2028C7F300C80DCA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E078FE2028C7F300C80DCA /* CloudKit.framework */; };
+		44E079022028CCAC00C80DCA /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E079012028CCAC00C80DCA /* MainTableViewController.swift */; };
+		44E079042028CE4B00C80DCA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E079032028CE4B00C80DCA /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44E078E72028C7CF00C80DCA /* BullitonBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullitonBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E078EA2028C7CF00C80DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44E078EC2028C7CF00C80DCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44E078EF2028C7CF00C80DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E078F12028C7CF00C80DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E078F42028C7CF00C80DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44E078F62028C7CF00C80DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E078FC2028C7EA00C80DCA /* BullitonBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BullitonBoard.entitlements; sourceTree = "<group>"; };
+		44E078FE2028C7F300C80DCA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		44E079012028CCAC00C80DCA /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		44E079032028CE4B00C80DCA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E078FF2028C7F300C80DCA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +44,10 @@
 		44E078DE2028C7CF00C80DCA = {
 			isa = PBXGroup;
 			children = (
+				44E079032028CE4B00C80DCA /* Default-568h@2x.png */,
 				44E078E92028C7CF00C80DCA /* BullitonBoard */,
 				44E078E82028C7CF00C80DCA /* Products */,
+				44E078FD2028C7F300C80DCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,31 @@
 		44E078E92028C7CF00C80DCA /* BullitonBoard */ = {
 			isa = PBXGroup;
 			children = (
+				44E078FC2028C7EA00C80DCA /* BullitonBoard.entitlements */,
+				44E079012028CCAC00C80DCA /* MainTableViewController.swift */,
 				44E078EA2028C7CF00C80DCA /* AppDelegate.swift */,
-				44E078EC2028C7CF00C80DCA /* ViewController.swift */,
 				44E078EE2028C7CF00C80DCA /* Main.storyboard */,
+				44E079002028CC7C00C80DCA /* Resources */,
+			);
+			path = BullitonBoard;
+			sourceTree = "<group>";
+		};
+		44E078FD2028C7F300C80DCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E078FE2028C7F300C80DCA /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44E079002028CC7C00C80DCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				44E078F12028C7CF00C80DCA /* Assets.xcassets */,
 				44E078F32028C7CF00C80DCA /* LaunchScreen.storyboard */,
 				44E078F62028C7CF00C80DCA /* Info.plist */,
 			);
-			path = BullitonBoard;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +122,14 @@
 					44E078E62028C7CF00C80DCA = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44E078F52028C7CF00C80DCA /* LaunchScreen.storyboard in Resources */,
+				44E079042028CE4B00C80DCA /* Default-568h@2x.png in Resources */,
 				44E078F22028C7CF00C80DCA /* Assets.xcassets in Resources */,
 				44E078F02028C7CF00C80DCA /* Main.storyboard in Resources */,
 			);
@@ -136,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E078ED2028C7CF00C80DCA /* ViewController.swift in Sources */,
+				44E079022028CCAC00C80DCA /* MainTableViewController.swift in Sources */,
 				44E078EB2028C7CF00C80DCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,12 +308,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BullitonBoard/BullitonBoard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7X639V2D7;
 				INFOPLIST_FILE = BullitonBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = erikhart1990.BullitonBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +326,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BullitonBoard/BullitonBoard.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7X639V2D7;
 				INFOPLIST_FILE = BullitonBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = erikhart1990.BullitonBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
