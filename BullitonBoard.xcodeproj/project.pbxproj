@@ -14,6 +14,10 @@
 		44E078FF2028C7F300C80DCA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E078FE2028C7F300C80DCA /* CloudKit.framework */; };
 		44E079022028CCAC00C80DCA /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E079012028CCAC00C80DCA /* MainTableViewController.swift */; };
 		44E079042028CE4B00C80DCA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E079032028CE4B00C80DCA /* Default-568h@2x.png */; };
+		44E079072028CF3D00C80DCA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E079062028CF3D00C80DCA /* Message.swift */; };
+		44E079092028D18900C80DCA /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E079082028D18900C80DCA /* Constance.swift */; };
+		44E0790B2028D42800C80DCA /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0790A2028D42800C80DCA /* MessageController.swift */; };
+		44E0790E2028D59500C80DCA /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0790D2028D59500C80DCA /* CloudKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		44E078FE2028C7F300C80DCA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		44E079012028CCAC00C80DCA /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		44E079032028CE4B00C80DCA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		44E079062028CF3D00C80DCA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		44E079082028D18900C80DCA /* Constance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
+		44E0790A2028D42800C80DCA /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		44E0790D2028D59500C80DCA /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				44E078FC2028C7EA00C80DCA /* BullitonBoard.entitlements */,
-				44E079012028CCAC00C80DCA /* MainTableViewController.swift */,
+				44E079082028D18900C80DCA /* Constance.swift */,
+				44E0790D2028D59500C80DCA /* CloudKitManager.swift */,
+				44E0790C2028D43000C80DCA /* Models+Controllers */,
+				44E079052028CF2200C80DCA /* Views+Controllers */,
 				44E078EA2028C7CF00C80DCA /* AppDelegate.swift */,
-				44E078EE2028C7CF00C80DCA /* Main.storyboard */,
 				44E079002028CC7C00C80DCA /* Resources */,
 			);
 			path = BullitonBoard;
@@ -87,6 +97,24 @@
 				44E078F62028C7CF00C80DCA /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		44E079052028CF2200C80DCA /* Views+Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44E079012028CCAC00C80DCA /* MainTableViewController.swift */,
+				44E078EE2028C7CF00C80DCA /* Main.storyboard */,
+			);
+			path = "Views+Controllers";
+			sourceTree = "<group>";
+		};
+		44E0790C2028D43000C80DCA /* Models+Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44E079062028CF3D00C80DCA /* Message.swift */,
+				44E0790A2028D42800C80DCA /* MessageController.swift */,
+			);
+			path = "Models+Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E079092028D18900C80DCA /* Constance.swift in Sources */,
+				44E079072028CF3D00C80DCA /* Message.swift in Sources */,
+				44E0790E2028D59500C80DCA /* CloudKitManager.swift in Sources */,
+				44E0790B2028D42800C80DCA /* MessageController.swift in Sources */,
 				44E079022028CCAC00C80DCA /* MainTableViewController.swift in Sources */,
 				44E078EB2028C7CF00C80DCA /* AppDelegate.swift in Sources */,
 			);
@@ -312,7 +344,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7X639V2D7;
-				INFOPLIST_FILE = BullitonBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BullitonBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = erikhart1990.BullitonBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,7 +362,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7X639V2D7;
-				INFOPLIST_FILE = BullitonBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BullitonBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = erikhart1990.BullitonBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
